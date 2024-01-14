@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 1px 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #4caf50;
+    width: 150px;
+    position: fixed;
+    top: 100px; /* Adjusted value */
+    left: 0;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.vertical-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 82px; /* Adjust the top value based on your header height */
+    left: 0;
+    background-color: #4caf50;
+    width: 135px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+
+.vertical-menu li {
+    text-align: center;
+}
+
+.vertical-menu a {
+    display: block;
+    color: white;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #5b59e2;
+}
+
+/* Styling for horizontal submenus */
+.horizontal-menu {
+    display: none;
+    position: absolute; /* Use 'absolute' instead of 'fixed' */
+    top: 100px; /* Adjust the top position based on your header height */
+    left: 500px;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.horizontal-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.horizontal-menu li {
+    text-align: center;
+}
+
+.horizontal-menu a {
+    color: #333;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.horizontal-menu a:hover {
+    background-color: #5b59e2;
+    color: white;
+}
+
+main {
+    margin-left: 150px;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+ul {
+    list-style-type: none;
+}
